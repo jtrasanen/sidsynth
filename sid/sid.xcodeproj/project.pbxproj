@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A6243BB1C0395CE003A5110 /* AudioCoreDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243BA1C0395CE003A5110 /* AudioCoreDriver.cpp */; };
+		4A6243C31C0395EB003A5110 /* PlayerLibSidplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243BF1C0395EB003A5110 /* PlayerLibSidplay.cpp */; };
+		4A6243C41C0395EB003A5110 /* sid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243C21C0395EB003A5110 /* sid.cpp */; };
+		4A6243E21C039909003A5110 /* config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243CB1C039909003A5110 /* config.cpp */; };
+		4A6243E31C039909003A5110 /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243CC1C039909003A5110 /* event.cpp */; };
+		4A6243E41C039909003A5110 /* mixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243D01C039909003A5110 /* mixer.cpp */; };
+		4A6243E61C039909003A5110 /* psiddrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243DA1C039909003A5110 /* psiddrv.cpp */; };
+		4A6243E71C039909003A5110 /* reloc65.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243DC1C039909003A5110 /* reloc65.cpp */; };
+		4A6243E81C039909003A5110 /* sidplay2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243DF1C039909003A5110 /* sidplay2.cpp */; };
+		4A62441A1C0399CF003A5110 /* envelope.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243FF1C0399CF003A5110 /* envelope.cc */; };
+		4A62441B1C0399CF003A5110 /* extfilt.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244011C0399CF003A5110 /* extfilt.cc */; };
+		4A62441C1C0399CF003A5110 /* filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244031C0399CF003A5110 /* filter.cc */; };
+		4A62441D1C0399CF003A5110 /* pot.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244061C0399CF003A5110 /* pot.cc */; };
+		4A62441E1C0399CF003A5110 /* sid.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244081C0399CF003A5110 /* sid.cc */; };
+		4A62441F1C0399CF003A5110 /* version.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A62440D1C0399CF003A5110 /* version.cc */; };
+		4A6244201C0399CF003A5110 /* voice.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A62440E1C0399CF003A5110 /* voice.cc */; };
+		4A6244211C0399CF003A5110 /* wave.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244101C0399CF003A5110 /* wave.cc */; };
+		4A6244221C0399CF003A5110 /* wave6581__ST.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244121C0399CF003A5110 /* wave6581__ST.cc */; };
+		4A6244231C0399CF003A5110 /* wave6581_P_T.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244131C0399CF003A5110 /* wave6581_P_T.cc */; };
+		4A6244241C0399CF003A5110 /* wave6581_PS_.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244141C0399CF003A5110 /* wave6581_PS_.cc */; };
+		4A6244251C0399CF003A5110 /* wave6581_PST.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244151C0399CF003A5110 /* wave6581_PST.cc */; };
+		4A6244261C0399CF003A5110 /* wave8580__ST.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244161C0399CF003A5110 /* wave8580__ST.cc */; };
+		4A6244271C0399CF003A5110 /* wave8580_P_T.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244171C0399CF003A5110 /* wave8580_P_T.cc */; };
+		4A6244281C0399CF003A5110 /* wave8580_PS_.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244181C0399CF003A5110 /* wave8580_PS_.cc */; };
+		4A6244291C0399CF003A5110 /* wave8580_PST.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244191C0399CF003A5110 /* wave8580_PST.cc */; };
+		4A62442E1C039A0D003A5110 /* resid-builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62442B1C039A0D003A5110 /* resid-builder.cpp */; };
+		4A62442F1C039A0D003A5110 /* resid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62442D1C039A0D003A5110 /* resid.cpp */; };
+		4A6244391C03BB35003A5110 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6244361C03BB35003A5110 /* CoreMIDI.framework */; };
+		4A62443A1C03BB35003A5110 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6244371C03BB35003A5110 /* GLUT.framework */; };
+		4A62443B1C03BB35003A5110 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6244381C03BB35003A5110 /* OpenGL.framework */; };
+		4A62443D1C03BBC5003A5110 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A62443C1C03BBC5003A5110 /* CoreAudio.framework */; };
+		4A62443F1C03BC37003A5110 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A62443E1C03BC37003A5110 /* CoreFoundation.framework */; };
+		4A62444C1C03BCC4003A5110 /* mos656x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244491C03BCC4003A5110 /* mos656x.cpp */; };
+		4A62445D1C03BCD3003A5110 /* mos6510.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244571C03BCD3003A5110 /* mos6510.cpp */; };
+		4A6244651C03BCDC003A5110 /* mos6526.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244621C03BCDC003A5110 /* mos6526.cpp */; };
+		4A6244661C03BE3B003A5110 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6243D51C039909003A5110 /* player.cpp */; };
+		4A62446D1C03BE50003A5110 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244681C03BE50003A5110 /* Makefile */; };
+		4A62446E1C03BE50003A5110 /* xsid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62446B1C03BE50003A5110 /* xsid.cpp */; };
+		4A6244801C03BE5C003A5110 /* IconInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244701C03BE5C003A5110 /* IconInfo.cpp */; };
+		4A6244811C03BE5C003A5110 /* InfoFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244711C03BE5C003A5110 /* InfoFile.cpp */; };
+		4A6244821C03BE5C003A5110 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244721C03BE5C003A5110 /* Makefile */; };
+		4A6244831C03BE5C003A5110 /* MUS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244751C03BE5C003A5110 /* MUS.cpp */; };
+		4A6244841C03BE5C003A5110 /* p00.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244761C03BE5C003A5110 /* p00.cpp */; };
+		4A6244851C03BE5C003A5110 /* PP20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6244771C03BE5C003A5110 /* PP20.cpp */; };
+		4A6244861C03BE5C003A5110 /* prg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62447A1C03BE5C003A5110 /* prg.cpp */; };
+		4A6244871C03BE5C003A5110 /* PSID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62447B1C03BE5C003A5110 /* PSID.cpp */; };
+		4A6244881C03BE5C003A5110 /* SidTune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62447C1C03BE5C003A5110 /* SidTune.cpp */; };
+		4A6244891C03BE5C003A5110 /* SidTuneTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62447E1C03BE5C003A5110 /* SidTuneTools.cpp */; };
+		4A6244901C03BE88003A5110 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4A62448B1C03BE88003A5110 /* Makefile */; };
+		4A6244911C03BE88003A5110 /* sid6526.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A62448E1C03BE88003A5110 /* sid6526.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A6243AE1C039545003A5110 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A6243B01C039545003A5110 /* sid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sid; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6243BA1C0395CE003A5110 /* AudioCoreDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioCoreDriver.cpp; sourceTree = "<group>"; };
+		4A6243BC1C0395EB003A5110 /* AudioCoreDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioCoreDriver.h; sourceTree = "<group>"; };
+		4A6243BD1C0395EB003A5110 /* AudioDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDriver.h; sourceTree = "<group>"; };
+		4A6243BF1C0395EB003A5110 /* PlayerLibSidplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerLibSidplay.cpp; sourceTree = "<group>"; };
+		4A6243C01C0395EB003A5110 /* PlayerLibSidplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerLibSidplay.h; sourceTree = "<group>"; };
+		4A6243C21C0395EB003A5110 /* sid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sid.cpp; sourceTree = "<group>"; };
+		4A6243C71C039909003A5110 /* basic.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = basic.bin; path = libsidplay2/basic.bin; sourceTree = "<group>"; };
+		4A6243CA1C039909003A5110 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = char.bin; path = libsidplay2/char.bin; sourceTree = "<group>"; };
+		4A6243CB1C039909003A5110 /* config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = config.cpp; path = libsidplay2/config.cpp; sourceTree = "<group>"; };
+		4A6243CC1C039909003A5110 /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = event.cpp; path = libsidplay2/event.cpp; sourceTree = "<group>"; };
+		4A6243CF1C039909003A5110 /* kernal.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = kernal.bin; path = libsidplay2/kernal.bin; sourceTree = "<group>"; };
+		4A6243D01C039909003A5110 /* mixer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mixer.cpp; path = libsidplay2/mixer.cpp; sourceTree = "<group>"; };
+		4A6243D41C039909003A5110 /* nullsid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nullsid.h; path = libsidplay2/nullsid.h; sourceTree = "<group>"; };
+		4A6243D51C039909003A5110 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player.cpp; path = libsidplay2/player.cpp; sourceTree = "<group>"; };
+		4A6243D61C039909003A5110 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = player.h; path = libsidplay2/player.h; sourceTree = "<group>"; };
+		4A6243D71C039909003A5110 /* poweron.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = poweron.bin; path = libsidplay2/poweron.bin; sourceTree = "<group>"; };
+		4A6243D81C039909003A5110 /* psiddrv.a65 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = psiddrv.a65; path = libsidplay2/psiddrv.a65; sourceTree = "<group>"; };
+		4A6243D91C039909003A5110 /* psiddrv.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = psiddrv.bin; path = libsidplay2/psiddrv.bin; sourceTree = "<group>"; };
+		4A6243DA1C039909003A5110 /* psiddrv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = psiddrv.cpp; path = libsidplay2/psiddrv.cpp; sourceTree = "<group>"; };
+		4A6243DB1C039909003A5110 /* ram.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = ram.bin; path = libsidplay2/ram.bin; sourceTree = "<group>"; };
+		4A6243DC1C039909003A5110 /* reloc65.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reloc65.cpp; path = libsidplay2/reloc65.cpp; sourceTree = "<group>"; };
+		4A6243DF1C039909003A5110 /* sidplay2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sidplay2.cpp; path = libsidplay2/sidplay2.cpp; sourceTree = "<group>"; };
+		4A6243EA1C03994E003A5110 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libsidplay2/include/config.h; sourceTree = "<group>"; };
+		4A6243EB1C03994E003A5110 /* sidenv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidenv.h; path = libsidplay2/include/sidenv.h; sourceTree = "<group>"; };
+		4A6243ED1C039969003A5110 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Buffer.h; path = libsidplay2/include/sidplay/Buffer.h; sourceTree = "<group>"; };
+		4A6243EE1C039969003A5110 /* c64env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c64env.h; path = libsidplay2/include/sidplay/c64env.h; sourceTree = "<group>"; };
+		4A6243EF1C039969003A5110 /* component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = component.h; path = libsidplay2/include/sidplay/component.h; sourceTree = "<group>"; };
+		4A6243F01C039969003A5110 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event.h; path = libsidplay2/include/sidplay/event.h; sourceTree = "<group>"; };
+		4A6243F11C039969003A5110 /* sid2types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sid2types.h; path = libsidplay2/include/sidplay/sid2types.h; sourceTree = "<group>"; };
+		4A6243F21C039969003A5110 /* sidbuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidbuilder.h; path = libsidplay2/include/sidplay/sidbuilder.h; sourceTree = "<group>"; };
+		4A6243F31C039969003A5110 /* sidconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidconfig.h; path = libsidplay2/include/sidplay/sidconfig.h; sourceTree = "<group>"; };
+		4A6243F41C039969003A5110 /* sidendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidendian.h; path = libsidplay2/include/sidplay/sidendian.h; sourceTree = "<group>"; };
+		4A6243F51C039969003A5110 /* sidint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidint.h; path = libsidplay2/include/sidplay/sidint.h; sourceTree = "<group>"; };
+		4A6243F61C039969003A5110 /* sidplay2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidplay2.h; path = libsidplay2/include/sidplay/sidplay2.h; sourceTree = "<group>"; };
+		4A6243F71C039969003A5110 /* SidTune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidTune.h; path = libsidplay2/include/sidplay/SidTune.h; sourceTree = "<group>"; };
+		4A6243F81C039969003A5110 /* sidtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidtypes.h; path = libsidplay2/include/sidplay/sidtypes.h; sourceTree = "<group>"; };
+		4A6243F91C039969003A5110 /* SmartPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartPtr.h; path = libsidplay2/include/sidplay/SmartPtr.h; sourceTree = "<group>"; };
+		4A6243FB1C039984003A5110 /* catweasel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = catweasel.h; path = libsidplay2/include/sidplay/builders/catweasel.h; sourceTree = "<group>"; };
+		4A6243FC1C039984003A5110 /* hardsid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hardsid.h; path = libsidplay2/include/sidplay/builders/hardsid.h; sourceTree = "<group>"; };
+		4A6243FD1C039984003A5110 /* resid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resid.h; path = libsidplay2/include/sidplay/builders/resid.h; sourceTree = "<group>"; };
+		4A6243FF1C0399CF003A5110 /* envelope.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = envelope.cc; path = resid/envelope.cc; sourceTree = "<group>"; };
+		4A6244001C0399CF003A5110 /* envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = envelope.h; path = resid/envelope.h; sourceTree = "<group>"; };
+		4A6244011C0399CF003A5110 /* extfilt.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = extfilt.cc; path = resid/extfilt.cc; sourceTree = "<group>"; };
+		4A6244021C0399CF003A5110 /* extfilt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = extfilt.h; path = resid/extfilt.h; sourceTree = "<group>"; };
+		4A6244031C0399CF003A5110 /* filter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = filter.cc; path = resid/filter.cc; sourceTree = "<group>"; };
+		4A6244041C0399CF003A5110 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = resid/filter.h; sourceTree = "<group>"; };
+		4A6244051C0399CF003A5110 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NEWS; path = resid/NEWS; sourceTree = "<group>"; };
+		4A6244061C0399CF003A5110 /* pot.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pot.cc; path = resid/pot.cc; sourceTree = "<group>"; };
+		4A6244071C0399CF003A5110 /* pot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pot.h; path = resid/pot.h; sourceTree = "<group>"; };
+		4A6244081C0399CF003A5110 /* sid.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sid.cc; path = resid/sid.cc; sourceTree = "<group>"; };
+		4A6244091C0399CF003A5110 /* sid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sid.h; path = resid/sid.h; sourceTree = "<group>"; };
+		4A62440A1C0399CF003A5110 /* siddefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = siddefs.h; path = resid/siddefs.h; sourceTree = "<group>"; };
+		4A62440B1C0399CF003A5110 /* siddefs.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = siddefs.h.in; path = resid/siddefs.h.in; sourceTree = "<group>"; };
+		4A62440C1C0399CF003A5110 /* spline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spline.h; path = resid/spline.h; sourceTree = "<group>"; };
+		4A62440D1C0399CF003A5110 /* version.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = version.cc; path = resid/version.cc; sourceTree = "<group>"; };
+		4A62440E1C0399CF003A5110 /* voice.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = voice.cc; path = resid/voice.cc; sourceTree = "<group>"; };
+		4A62440F1C0399CF003A5110 /* voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = voice.h; path = resid/voice.h; sourceTree = "<group>"; };
+		4A6244101C0399CF003A5110 /* wave.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave.cc; path = resid/wave.cc; sourceTree = "<group>"; };
+		4A6244111C0399CF003A5110 /* wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wave.h; path = resid/wave.h; sourceTree = "<group>"; };
+		4A6244121C0399CF003A5110 /* wave6581__ST.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave6581__ST.cc; path = resid/wave6581__ST.cc; sourceTree = "<group>"; };
+		4A6244131C0399CF003A5110 /* wave6581_P_T.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave6581_P_T.cc; path = resid/wave6581_P_T.cc; sourceTree = "<group>"; };
+		4A6244141C0399CF003A5110 /* wave6581_PS_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave6581_PS_.cc; path = resid/wave6581_PS_.cc; sourceTree = "<group>"; };
+		4A6244151C0399CF003A5110 /* wave6581_PST.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave6581_PST.cc; path = resid/wave6581_PST.cc; sourceTree = "<group>"; };
+		4A6244161C0399CF003A5110 /* wave8580__ST.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave8580__ST.cc; path = resid/wave8580__ST.cc; sourceTree = "<group>"; };
+		4A6244171C0399CF003A5110 /* wave8580_P_T.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave8580_P_T.cc; path = resid/wave8580_P_T.cc; sourceTree = "<group>"; };
+		4A6244181C0399CF003A5110 /* wave8580_PS_.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave8580_PS_.cc; path = resid/wave8580_PS_.cc; sourceTree = "<group>"; };
+		4A6244191C0399CF003A5110 /* wave8580_PST.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wave8580_PST.cc; path = resid/wave8580_PST.cc; sourceTree = "<group>"; };
+		4A62442B1C039A0D003A5110 /* resid-builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "resid-builder.cpp"; path = "libsidplay2/resid/resid-builder.cpp"; sourceTree = "<group>"; };
+		4A62442C1C039A0D003A5110 /* resid-emu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "resid-emu.h"; path = "libsidplay2/resid/resid-emu.h"; sourceTree = "<group>"; };
+		4A62442D1C039A0D003A5110 /* resid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resid.cpp; path = libsidplay2/resid/resid.cpp; sourceTree = "<group>"; };
+		4A6244361C03BB35003A5110 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = ../../../../../System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<group>"; };
+		4A6244371C03BB35003A5110 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
+		4A6244381C03BB35003A5110 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		4A62443C1C03BBC5003A5110 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = ../../../../../System/Library/Frameworks/CoreAudio.framework; sourceTree = "<group>"; };
+		4A62443E1C03BC37003A5110 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
+		4A6244421C03BCA4003A5110 /* c64cia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c64cia.h; path = libsidplay2/c64/c64cia.h; sourceTree = "<group>"; };
+		4A6244431C03BCA4003A5110 /* c64vic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c64vic.h; path = libsidplay2/c64/c64vic.h; sourceTree = "<group>"; };
+		4A6244441C03BCA4003A5110 /* c64xsid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c64xsid.h; path = libsidplay2/c64/c64xsid.h; sourceTree = "<group>"; };
+		4A6244491C03BCC4003A5110 /* mos656x.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mos656x.cpp; sourceTree = "<group>"; };
+		4A62444A1C03BCC4003A5110 /* mos656x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mos656x.h; sourceTree = "<group>"; };
+		4A62444E1C03BCD3003A5110 /* conf6510.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf6510.h; sourceTree = "<group>"; };
+		4A6244501C03BCD3003A5110 /* mos6510c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mos6510c.h; sourceTree = "<group>"; };
+		4A6244511C03BCD3003A5110 /* mos6510c.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = mos6510c.i; sourceTree = "<group>"; };
+		4A6244521C03BCD3003A5110 /* sid6510c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sid6510c.h; sourceTree = "<group>"; };
+		4A6244531C03BCD3003A5110 /* sid6510c.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = sid6510c.i; sourceTree = "<group>"; };
+		4A6244571C03BCD3003A5110 /* mos6510.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mos6510.cpp; sourceTree = "<group>"; };
+		4A6244581C03BCD3003A5110 /* mos6510.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mos6510.h; sourceTree = "<group>"; };
+		4A6244591C03BCD3003A5110 /* opcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcodes.h; sourceTree = "<group>"; };
+		4A6244621C03BCDC003A5110 /* mos6526.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mos6526.cpp; sourceTree = "<group>"; };
+		4A6244631C03BCDC003A5110 /* mos6526.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mos6526.h; sourceTree = "<group>"; };
+		4A6244681C03BE50003A5110 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4A6244691C03BE50003A5110 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4A62446A1C03BE50003A5110 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4A62446B1C03BE50003A5110 /* xsid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xsid.cpp; sourceTree = "<group>"; };
+		4A62446C1C03BE50003A5110 /* xsid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xsid.h; sourceTree = "<group>"; };
+		4A6244701C03BE5C003A5110 /* IconInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IconInfo.cpp; sourceTree = "<group>"; };
+		4A6244711C03BE5C003A5110 /* InfoFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InfoFile.cpp; sourceTree = "<group>"; };
+		4A6244721C03BE5C003A5110 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4A6244731C03BE5C003A5110 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4A6244741C03BE5C003A5110 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4A6244751C03BE5C003A5110 /* MUS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MUS.cpp; sourceTree = "<group>"; };
+		4A6244761C03BE5C003A5110 /* p00.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = p00.cpp; sourceTree = "<group>"; };
+		4A6244771C03BE5C003A5110 /* PP20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PP20.cpp; sourceTree = "<group>"; };
+		4A6244781C03BE5C003A5110 /* PP20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP20.h; sourceTree = "<group>"; };
+		4A6244791C03BE5C003A5110 /* PP20_Defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PP20_Defs.h; sourceTree = "<group>"; };
+		4A62447A1C03BE5C003A5110 /* prg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prg.cpp; sourceTree = "<group>"; };
+		4A62447B1C03BE5C003A5110 /* PSID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PSID.cpp; sourceTree = "<group>"; };
+		4A62447C1C03BE5C003A5110 /* SidTune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SidTune.cpp; sourceTree = "<group>"; };
+		4A62447D1C03BE5C003A5110 /* SidTuneCfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidTuneCfg.h; sourceTree = "<group>"; };
+		4A62447E1C03BE5C003A5110 /* SidTuneTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SidTuneTools.cpp; sourceTree = "<group>"; };
+		4A62447F1C03BE5C003A5110 /* SidTuneTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidTuneTools.h; sourceTree = "<group>"; };
+		4A62448B1C03BE88003A5110 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4A62448C1C03BE88003A5110 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4A62448D1C03BE88003A5110 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4A62448E1C03BE88003A5110 /* sid6526.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sid6526.cpp; sourceTree = "<group>"; };
+		4A62448F1C03BE88003A5110 /* sid6526.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sid6526.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A6243AD1C039545003A5110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A62443F1C03BC37003A5110 /* CoreFoundation.framework in Frameworks */,
+				4A62443A1C03BB35003A5110 /* GLUT.framework in Frameworks */,
+				4A6244391C03BB35003A5110 /* CoreMIDI.framework in Frameworks */,
+				4A62443D1C03BBC5003A5110 /* CoreAudio.framework in Frameworks */,
+				4A62443B1C03BB35003A5110 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A6243A71C039545003A5110 = {
+			isa = PBXGroup;
+			children = (
+				4A62443E1C03BC37003A5110 /* CoreFoundation.framework */,
+				4A62443C1C03BBC5003A5110 /* CoreAudio.framework */,
+				4A6244361C03BB35003A5110 /* CoreMIDI.framework */,
+				4A6244371C03BB35003A5110 /* GLUT.framework */,
+				4A6244381C03BB35003A5110 /* OpenGL.framework */,
+				4A6243B21C039545003A5110 /* sid */,
+				4A6243B11C039545003A5110 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A6243B11C039545003A5110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A6243B01C039545003A5110 /* sid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A6243B21C039545003A5110 /* sid */ = {
+			isa = PBXGroup;
+			children = (
+				4A6243FE1C0399A6003A5110 /* resid */,
+				4A6243C61C0398F2003A5110 /* libsidplay2 */,
+				4A6243BC1C0395EB003A5110 /* AudioCoreDriver.h */,
+				4A6243BD1C0395EB003A5110 /* AudioDriver.h */,
+				4A6243BF1C0395EB003A5110 /* PlayerLibSidplay.cpp */,
+				4A6243C01C0395EB003A5110 /* PlayerLibSidplay.h */,
+				4A6243C21C0395EB003A5110 /* sid.cpp */,
+				4A6243BA1C0395CE003A5110 /* AudioCoreDriver.cpp */,
+			);
+			name = sid;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+		4A6243C61C0398F2003A5110 /* libsidplay2 */ = {
+			isa = PBXGroup;
+			children = (
+				4A62448A1C03BE88003A5110 /* sid6526 */,
+				4A62446F1C03BE5C003A5110 /* sidtune */,
+				4A6244671C03BE50003A5110 /* xsid */,
+				4A62445E1C03BCDC003A5110 /* mos6526 */,
+				4A62444D1C03BCD3003A5110 /* mos6510 */,
+				4A6244451C03BCC4003A5110 /* mos656x */,
+				4A6244411C03BC94003A5110 /* c64 */,
+				4A62442A1C0399FB003A5110 /* resid */,
+				4A6243E91C03993D003A5110 /* include */,
+				4A6243C71C039909003A5110 /* basic.bin */,
+				4A6243CA1C039909003A5110 /* char.bin */,
+				4A6243CB1C039909003A5110 /* config.cpp */,
+				4A6243CC1C039909003A5110 /* event.cpp */,
+				4A6243CF1C039909003A5110 /* kernal.bin */,
+				4A6243D01C039909003A5110 /* mixer.cpp */,
+				4A6243D41C039909003A5110 /* nullsid.h */,
+				4A6243D51C039909003A5110 /* player.cpp */,
+				4A6243D61C039909003A5110 /* player.h */,
+				4A6243D71C039909003A5110 /* poweron.bin */,
+				4A6243D81C039909003A5110 /* psiddrv.a65 */,
+				4A6243D91C039909003A5110 /* psiddrv.bin */,
+				4A6243DA1C039909003A5110 /* psiddrv.cpp */,
+				4A6243DB1C039909003A5110 /* ram.bin */,
+				4A6243DC1C039909003A5110 /* reloc65.cpp */,
+				4A6243DF1C039909003A5110 /* sidplay2.cpp */,
+			);
+			name = libsidplay2;
+			sourceTree = "<group>";
+		};
+		4A6243E91C03993D003A5110 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4A6243EC1C039952003A5110 /* sidplay */,
+				4A6243EA1C03994E003A5110 /* config.h */,
+				4A6243EB1C03994E003A5110 /* sidenv.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		4A6243EC1C039952003A5110 /* sidplay */ = {
+			isa = PBXGroup;
+			children = (
+				4A6243FA1C03996D003A5110 /* builders */,
+				4A6243ED1C039969003A5110 /* Buffer.h */,
+				4A6243EE1C039969003A5110 /* c64env.h */,
+				4A6243EF1C039969003A5110 /* component.h */,
+				4A6243F01C039969003A5110 /* event.h */,
+				4A6243F11C039969003A5110 /* sid2types.h */,
+				4A6243F21C039969003A5110 /* sidbuilder.h */,
+				4A6243F31C039969003A5110 /* sidconfig.h */,
+				4A6243F41C039969003A5110 /* sidendian.h */,
+				4A6243F51C039969003A5110 /* sidint.h */,
+				4A6243F61C039969003A5110 /* sidplay2.h */,
+				4A6243F71C039969003A5110 /* SidTune.h */,
+				4A6243F81C039969003A5110 /* sidtypes.h */,
+				4A6243F91C039969003A5110 /* SmartPtr.h */,
+			);
+			name = sidplay;
+			sourceTree = "<group>";
+		};
+		4A6243FA1C03996D003A5110 /* builders */ = {
+			isa = PBXGroup;
+			children = (
+				4A6243FB1C039984003A5110 /* catweasel.h */,
+				4A6243FC1C039984003A5110 /* hardsid.h */,
+				4A6243FD1C039984003A5110 /* resid.h */,
+			);
+			name = builders;
+			sourceTree = "<group>";
+		};
+		4A6243FE1C0399A6003A5110 /* resid */ = {
+			isa = PBXGroup;
+			children = (
+				4A6243FF1C0399CF003A5110 /* envelope.cc */,
+				4A6244001C0399CF003A5110 /* envelope.h */,
+				4A6244011C0399CF003A5110 /* extfilt.cc */,
+				4A6244021C0399CF003A5110 /* extfilt.h */,
+				4A6244031C0399CF003A5110 /* filter.cc */,
+				4A6244041C0399CF003A5110 /* filter.h */,
+				4A6244051C0399CF003A5110 /* NEWS */,
+				4A6244061C0399CF003A5110 /* pot.cc */,
+				4A6244071C0399CF003A5110 /* pot.h */,
+				4A6244081C0399CF003A5110 /* sid.cc */,
+				4A6244091C0399CF003A5110 /* sid.h */,
+				4A62440A1C0399CF003A5110 /* siddefs.h */,
+				4A62440B1C0399CF003A5110 /* siddefs.h.in */,
+				4A62440C1C0399CF003A5110 /* spline.h */,
+				4A62440D1C0399CF003A5110 /* version.cc */,
+				4A62440E1C0399CF003A5110 /* voice.cc */,
+				4A62440F1C0399CF003A5110 /* voice.h */,
+				4A6244101C0399CF003A5110 /* wave.cc */,
+				4A6244111C0399CF003A5110 /* wave.h */,
+				4A6244121C0399CF003A5110 /* wave6581__ST.cc */,
+				4A6244131C0399CF003A5110 /* wave6581_P_T.cc */,
+				4A6244141C0399CF003A5110 /* wave6581_PS_.cc */,
+				4A6244151C0399CF003A5110 /* wave6581_PST.cc */,
+				4A6244161C0399CF003A5110 /* wave8580__ST.cc */,
+				4A6244171C0399CF003A5110 /* wave8580_P_T.cc */,
+				4A6244181C0399CF003A5110 /* wave8580_PS_.cc */,
+				4A6244191C0399CF003A5110 /* wave8580_PST.cc */,
+			);
+			name = resid;
+			sourceTree = "<group>";
+		};
+		4A62442A1C0399FB003A5110 /* resid */ = {
+			isa = PBXGroup;
+			children = (
+				4A62442B1C039A0D003A5110 /* resid-builder.cpp */,
+				4A62442C1C039A0D003A5110 /* resid-emu.h */,
+				4A62442D1C039A0D003A5110 /* resid.cpp */,
+			);
+			name = resid;
+			sourceTree = "<group>";
+		};
+		4A6244411C03BC94003A5110 /* c64 */ = {
+			isa = PBXGroup;
+			children = (
+				4A6244421C03BCA4003A5110 /* c64cia.h */,
+				4A6244431C03BCA4003A5110 /* c64vic.h */,
+				4A6244441C03BCA4003A5110 /* c64xsid.h */,
+			);
+			name = c64;
+			sourceTree = "<group>";
+		};
+		4A6244451C03BCC4003A5110 /* mos656x */ = {
+			isa = PBXGroup;
+			children = (
+				4A6244491C03BCC4003A5110 /* mos656x.cpp */,
+				4A62444A1C03BCC4003A5110 /* mos656x.h */,
+			);
+			name = mos656x;
+			path = libsidplay2/mos656x;
+			sourceTree = "<group>";
+		};
+		4A62444D1C03BCD3003A5110 /* mos6510 */ = {
+			isa = PBXGroup;
+			children = (
+				4A62444E1C03BCD3003A5110 /* conf6510.h */,
+				4A62444F1C03BCD3003A5110 /* cycle_based */,
+				4A6244571C03BCD3003A5110 /* mos6510.cpp */,
+				4A6244581C03BCD3003A5110 /* mos6510.h */,
+				4A6244591C03BCD3003A5110 /* opcodes.h */,
+			);
+			name = mos6510;
+			path = libsidplay2/mos6510;
+			sourceTree = "<group>";
+		};
+		4A62444F1C03BCD3003A5110 /* cycle_based */ = {
+			isa = PBXGroup;
+			children = (
+				4A6244501C03BCD3003A5110 /* mos6510c.h */,
+				4A6244511C03BCD3003A5110 /* mos6510c.i */,
+				4A6244521C03BCD3003A5110 /* sid6510c.h */,
+				4A6244531C03BCD3003A5110 /* sid6510c.i */,
+			);
+			path = cycle_based;
+			sourceTree = "<group>";
+		};
+		4A62445E1C03BCDC003A5110 /* mos6526 */ = {
+			isa = PBXGroup;
+			children = (
+				4A6244621C03BCDC003A5110 /* mos6526.cpp */,
+				4A6244631C03BCDC003A5110 /* mos6526.h */,
+			);
+			name = mos6526;
+			path = libsidplay2/mos6526;
+			sourceTree = "<group>";
+		};
+		4A6244671C03BE50003A5110 /* xsid */ = {
+			isa = PBXGroup;
+			children = (
+				4A6244681C03BE50003A5110 /* Makefile */,
+				4A6244691C03BE50003A5110 /* Makefile.am */,
+				4A62446A1C03BE50003A5110 /* Makefile.in */,
+				4A62446B1C03BE50003A5110 /* xsid.cpp */,
+				4A62446C1C03BE50003A5110 /* xsid.h */,
+			);
+			name = xsid;
+			path = libsidplay2/xsid;
+			sourceTree = "<group>";
+		};
+		4A62446F1C03BE5C003A5110 /* sidtune */ = {
+			isa = PBXGroup;
+			children = (
+				4A6244701C03BE5C003A5110 /* IconInfo.cpp */,
+				4A6244711C03BE5C003A5110 /* InfoFile.cpp */,
+				4A6244721C03BE5C003A5110 /* Makefile */,
+				4A6244731C03BE5C003A5110 /* Makefile.am */,
+				4A6244741C03BE5C003A5110 /* Makefile.in */,
+				4A6244751C03BE5C003A5110 /* MUS.cpp */,
+				4A6244761C03BE5C003A5110 /* p00.cpp */,
+				4A6244771C03BE5C003A5110 /* PP20.cpp */,
+				4A6244781C03BE5C003A5110 /* PP20.h */,
+				4A6244791C03BE5C003A5110 /* PP20_Defs.h */,
+				4A62447A1C03BE5C003A5110 /* prg.cpp */,
+				4A62447B1C03BE5C003A5110 /* PSID.cpp */,
+				4A62447C1C03BE5C003A5110 /* SidTune.cpp */,
+				4A62447D1C03BE5C003A5110 /* SidTuneCfg.h */,
+				4A62447E1C03BE5C003A5110 /* SidTuneTools.cpp */,
+				4A62447F1C03BE5C003A5110 /* SidTuneTools.h */,
+			);
+			name = sidtune;
+			path = libsidplay2/sidtune;
+			sourceTree = "<group>";
+		};
+		4A62448A1C03BE88003A5110 /* sid6526 */ = {
+			isa = PBXGroup;
+			children = (
+				4A62448B1C03BE88003A5110 /* Makefile */,
+				4A62448C1C03BE88003A5110 /* Makefile.am */,
+				4A62448D1C03BE88003A5110 /* Makefile.in */,
+				4A62448E1C03BE88003A5110 /* sid6526.cpp */,
+				4A62448F1C03BE88003A5110 /* sid6526.h */,
+			);
+			name = sid6526;
+			path = libsidplay2/sid6526;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A6243AF1C039545003A5110 /* sid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6243B71C039545003A5110 /* Build configuration list for PBXNativeTarget "sid" */;
+			buildPhases = (
+				4A6243AC1C039545003A5110 /* Sources */,
+				4A6243AD1C039545003A5110 /* Frameworks */,
+				4A6243AE1C039545003A5110 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sid;
+			productName = sid;
+			productReference = 4A6243B01C039545003A5110 /* sid */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A6243A81C039545003A5110 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jussi Räsänen";
+				TargetAttributes = {
+					4A6243AF1C039545003A5110 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4A6243AB1C039545003A5110 /* Build configuration list for PBXProject "sid" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A6243A71C039545003A5110;
+			productRefGroup = 4A6243B11C039545003A5110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A6243AF1C039545003A5110 /* sid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A6243AC1C039545003A5110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6244201C0399CF003A5110 /* voice.cc in Sources */,
+				4A6244861C03BE5C003A5110 /* prg.cpp in Sources */,
+				4A6244221C0399CF003A5110 /* wave6581__ST.cc in Sources */,
+				4A6243E61C039909003A5110 /* psiddrv.cpp in Sources */,
+				4A62442E1C039A0D003A5110 /* resid-builder.cpp in Sources */,
+				4A6243C41C0395EB003A5110 /* sid.cpp in Sources */,
+				4A6243E21C039909003A5110 /* config.cpp in Sources */,
+				4A6244831C03BE5C003A5110 /* MUS.cpp in Sources */,
+				4A6244881C03BE5C003A5110 /* SidTune.cpp in Sources */,
+				4A62446D1C03BE50003A5110 /* Makefile in Sources */,
+				4A6243E81C039909003A5110 /* sidplay2.cpp in Sources */,
+				4A6244911C03BE88003A5110 /* sid6526.cpp in Sources */,
+				4A6244261C0399CF003A5110 /* wave8580__ST.cc in Sources */,
+				4A6244291C0399CF003A5110 /* wave8580_PST.cc in Sources */,
+				4A62441F1C0399CF003A5110 /* version.cc in Sources */,
+				4A6244901C03BE88003A5110 /* Makefile in Sources */,
+				4A6244851C03BE5C003A5110 /* PP20.cpp in Sources */,
+				4A6243BB1C0395CE003A5110 /* AudioCoreDriver.cpp in Sources */,
+				4A6244231C0399CF003A5110 /* wave6581_P_T.cc in Sources */,
+				4A6243C31C0395EB003A5110 /* PlayerLibSidplay.cpp in Sources */,
+				4A62446E1C03BE50003A5110 /* xsid.cpp in Sources */,
+				4A6244891C03BE5C003A5110 /* SidTuneTools.cpp in Sources */,
+				4A6244281C0399CF003A5110 /* wave8580_PS_.cc in Sources */,
+				4A6243E31C039909003A5110 /* event.cpp in Sources */,
+				4A6243E71C039909003A5110 /* reloc65.cpp in Sources */,
+				4A6244821C03BE5C003A5110 /* Makefile in Sources */,
+				4A6244871C03BE5C003A5110 /* PSID.cpp in Sources */,
+				4A6244271C0399CF003A5110 /* wave8580_P_T.cc in Sources */,
+				4A6244811C03BE5C003A5110 /* InfoFile.cpp in Sources */,
+				4A62441A1C0399CF003A5110 /* envelope.cc in Sources */,
+				4A62441C1C0399CF003A5110 /* filter.cc in Sources */,
+				4A6244651C03BCDC003A5110 /* mos6526.cpp in Sources */,
+				4A6244211C0399CF003A5110 /* wave.cc in Sources */,
+				4A62441E1C0399CF003A5110 /* sid.cc in Sources */,
+				4A62442F1C039A0D003A5110 /* resid.cpp in Sources */,
+				4A6243E41C039909003A5110 /* mixer.cpp in Sources */,
+				4A62441B1C0399CF003A5110 /* extfilt.cc in Sources */,
+				4A6244241C0399CF003A5110 /* wave6581_PS_.cc in Sources */,
+				4A6244251C0399CF003A5110 /* wave6581_PST.cc in Sources */,
+				4A62441D1C0399CF003A5110 /* pot.cc in Sources */,
+				4A6244801C03BE5C003A5110 /* IconInfo.cpp in Sources */,
+				4A6244661C03BE3B003A5110 /* player.cpp in Sources */,
+				4A62444C1C03BCC4003A5110 /* mos656x.cpp in Sources */,
+				4A6244841C03BE5C003A5110 /* p00.cpp in Sources */,
+				4A62445D1C03BCD3003A5110 /* mos6510.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A6243B51C039545003A5110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A6243B61C039545003A5110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A6243B81C039545003A5110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A6243B91C039545003A5110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A6243AB1C039545003A5110 /* Build configuration list for PBXProject "sid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6243B51C039545003A5110 /* Debug */,
+				4A6243B61C039545003A5110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6243B71C039545003A5110 /* Build configuration list for PBXNativeTarget "sid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6243B81C039545003A5110 /* Debug */,
+				4A6243B91C039545003A5110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A6243A81C039545003A5110 /* Project object */;
+}
